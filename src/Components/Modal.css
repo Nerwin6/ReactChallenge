@@ -1,0 +1,68 @@
+/* src/components/Modal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background: #2f80ed;
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transform: translate(-50%, -50%) scale(0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: modalAppear 0.5s ease-out forwards;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  @keyframes modalAppear {
+    0% {
+      transform: translate(-50%, -50%) scale(0.5);
+      opacity: 0;
+    }
+    70% {
+      transform: translate(-50%, -50%) scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .modal-content h2 {
+    color: #4caf50;
+  }
+  
+/* src/components/Modal.css */
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s ease;
+  
+    &:hover {
+      color: red; /* Change color on hover to a contrasting color */
+    }
+  }
+  

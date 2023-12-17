@@ -1,0 +1,27 @@
+#root {
+  max-width: auto;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+body {
+  font-family: 'Roboto' , sans-serif;
+  background-color: #f2f5f8; /* Light blue-gray background for the entire page */
+  margin: 0;
+}
+
+
+/* src/App.css */
+.app-container {
+  display: flex;
+}
+
+.main-container {
+  flex-grow: 1;
+  overflow: hidden;
+  transition: margin-left 0.5s;
+}
+
+.main-container.open {
+  margin-left: 250px; /* Adjust this value to match the width of the open sidebar */
+}

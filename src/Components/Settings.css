@@ -1,0 +1,121 @@
+.form-title {
+    background-color: #1c5d99; /* Lighter blue background for the title */
+    color: #fff;
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 8px 8px 0 0; /* Rounded corners for the top */
+    margin-bottom: 20px;
+    margin: auto;
+    font-size: 24px; /* Larger font size for the title */
+    text-align: center;
+  }
+  
+  .settings-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff; /* Keep the background color white */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .settings-form label {
+      display: block;
+      margin-bottom: 8px; /* Reduced margin for a cleaner look */
+      font-weight: bold; /* Make labels bold for better visibility */
+      color: #2c3e50; /* Darker text color for labels */
+    }
+    
+    .settings-form input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    
+    .settings-form input[type="text"],
+    .settings-form select {
+      width: 100%;
+      padding: 12px; /* Increased padding for better touch interactions */
+      margin-top: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px; /* Slightly rounder corners */
+      box-sizing: border-box;
+    }
+    
+    /* Blue border color when focused */
+    .settings-form input[type="text"]:focus,
+    .settings-form select:focus {
+      outline: none;
+      border-color: #3498db; /* Lighter blue color when focused */
+      box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+    }
+    
+    /* Red border color for error */
+    .settings-form input[type="text"].error,
+    .settings-form select.error {
+      border-color: #e74c3c; /* Darker red color for error */
+      animation: shake 0.5s ease-in-out 1;
+    }
+    
+    .settings-form button {
+      background-color: #1c5d99; /* Lighter blue color for the button */
+      color: #fff;
+      padding: 12px 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    .settings-form button:disabled {
+      background-color: #bdc3c7; /* Lighter gray for disabled button */
+      cursor: not-allowed;
+    }
+    
+    .settings-form button:hover {
+      background-color: #2980b9; /* Darker blue on hover */
+    }
+    
+    .settings-form span {
+      color: #e74c3c; /* Darker red color for error messages */
+      margin-top: 5px;
+      display: block;
+      font-size: 14px; /* Smaller font size for error messages */
+    }
+    
+    /* Custom styles for the dropdown arrow */
+    .settings-form select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-image: url('data:image/svg+xml;utf8,<svg fill="none" xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5H7z" fill="%233498db"/></svg>');
+      background-position: right 8px top 50%;
+      background-repeat: no-repeat;
+      padding-right: 30px;
+    }
+    
+    /* Custom styles for the dropdown options */
+    .settings-form select option {
+      background-color: #fff;
+      color: #34495e; /* Darker text color for options */
+    }
+    
+    /* Custom styles for the dropdown arrow on hover */
+    .settings-form select:hover {
+      cursor: pointer;
+      filter: brightness(1.2);
+    }
+    
+    /* Shake animation for error */
+    @keyframes shake {
+      0%, 100% {
+        transform: translateX(0);
+      }
+      25%, 75% {
+        transform: translateX(-5px);
+      }
+      50% {
+        transform: translateX(5px);
+      }
+    } 

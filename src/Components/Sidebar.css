@@ -1,0 +1,86 @@
+/* src/components/Sidebar.css */
+.sidebar {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1c5d99; /* Dark blue background color */
+    overflow-x: hidden;
+    transition: 0.5s;
+    
+  }
+  .sidebar-link {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #33475b; /* Dark text color */
+    border-bottom: 1px solid #ffffff; /* White border between list items */
+    transition: background-color 0.5s, color 0.5s, border-radius 0.5s; /* Smooth transition on hover */
+    
+}
+.sidebar-link:hover {
+    background-color: #f2f5f8;
+    border-radius:20px;
+    color:#1c5d99; /* Light blue background on hover */
+}
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .hamburger {
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #33475b; /* White color for the hamburger icon */
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+  }
+  .hamburger.white {
+    color: #ffffff; /* White color when the sidebar is open */
+}
+  
+  .sidebar.open {
+    width: 250px;
+
+    margin-left: 0; /* Adjust this value to match the width of the open sidebar */  
+  }
+  
+  /* Add the following styles for the content area */
+  .main-content {
+    transition: margin-left 0.5s;
+    margin-left: 0; /* Initially set to 0 */
+    padding: 20px; /* Add padding to the main content */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    box-sizing: border-box; /* Include padding and border in the total height */
+  }
+  
+  .main-content.open {
+    margin-left: 250px; /* Adjust this value to match the width of the open sidebar */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media screen and (max-width: 600px) {
+    .main-content.open {
+      margin-left: 0; /* Adjust margin for smaller screens */
+    }
+  }
+  

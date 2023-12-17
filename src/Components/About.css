@@ -1,0 +1,22 @@
+/* Add styles for the about container */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 200vh; /* Set a minimum height to enable scrolling */
+    overflow: auto; /* Enable scrolling */
+  }
+  
+
+  
+  /* Add styles for the explanatory paragraph */
+  .explanation {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  /* Add styles for the fade-in effect */
+
+  

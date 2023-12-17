@@ -1,0 +1,32 @@
+/* Add styles for the card */
+.card {
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    opacity: 1;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    background-color: #3498db; /* Blue background color */
+    color: #fff; /* White text color */
+  }
+  
+  /* Add styles for the card title */
+  .card-title {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  /* Add styles for the card content */
+  .card-content {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Add styles for the fade-in effect */
+  .card.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
